@@ -1,0 +1,19 @@
+{
+    "products": [
+    {
+        "id": 1,
+        "name": "Caneta Bic Preta",
+        "price":5.89
+    },
+    {
+        "id": 2,
+        "name": "Lapiseira grafit 1.0",
+        "price":9.75
+    },
+    {
+        "id": 3,
+        "name": "Estojo Ladybug",
+        "price":15.99
+    }
+]
+}
