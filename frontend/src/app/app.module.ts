@@ -11,6 +11,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component'; 
 
+import {MatSidenavModule} from '@angular/material/sidenav'
+import {MatListModule} from '@angular/material/list'
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,14 +23,18 @@ import { NavComponent } from './components/template/nav/nav.component';
     NavComponent,
     
   ],
+  exports: [MatSidenavModule],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     // Referenciando o módulo dentro de imports
-    MatToolbarModule
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
