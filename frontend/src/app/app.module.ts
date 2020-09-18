@@ -12,7 +12,10 @@ import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component'; 
 
 import {MatSidenavModule} from '@angular/material/sidenav'
-import {MatListModule} from '@angular/material/list'
+import {MatCardModule} from '@angular/material/card'
+import {MatListModule} from '@angular/material/list';
+import { HomeComponent } from './views/home/home.component';
+import { ProductsCrudComponent } from './views/products-crud/products-crud.component'
 
 
 @NgModule({
@@ -21,9 +24,10 @@ import {MatListModule} from '@angular/material/list'
     HeaderComponent,
     FooterComponent,
     NavComponent,
+    HomeComponent,
+    ProductsCrudComponent,
     
   ],
-  exports: [MatSidenavModule],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -31,7 +35,8 @@ import {MatListModule} from '@angular/material/list'
     // Referenciando o módulo dentro de imports
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
