@@ -1,0 +1,12 @@
+form {
+    display: flex;
+    flex-direction: column;    
+}
+form input {
+    color: #0fffc6;
+}
+
+button {
+    margin: 20px 15px 0 0;
+    
+}
