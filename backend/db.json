@@ -14,6 +14,11 @@
       "id": 3,
       "name": "Estojo Ladybug",
       "price": 15.99
+    },
+    {
+      "name": "Borracha do Fofão",
+      "price": "7.99",
+      "id": 4
     }
   ]
 }
