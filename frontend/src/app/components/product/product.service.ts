@@ -29,4 +29,10 @@ export class ProductService {
     return this.http.post<Product>(this.baseUrl, product) //Post retorna um observable
     //Como está sendo inserido um produto com nome e preço, e experado receber o produto com  nome, preço e id
   }
+
+  //Metodo responsável por ler os produtos cadastrados no backend
+
+  read():Observable<Product[]> { // Observabble retorna uma lista de produtos
+    return this.http.get<Product[]>(this.baseUrl)
+  }
 }
