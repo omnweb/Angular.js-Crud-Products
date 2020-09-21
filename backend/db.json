@@ -19,6 +19,11 @@
       "name": "Borracha do Fofão",
       "price": "7.99",
       "id": 4
+    },
+    {
+      "name": "",
+      "price": null,
+      "id": 5
     }
   ]
 }
