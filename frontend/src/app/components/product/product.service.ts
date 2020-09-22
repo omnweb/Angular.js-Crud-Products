@@ -43,8 +43,13 @@ export class ProductService {
   }
 
   // Método responsável por fazer a alteração do produto
-  update(product: Product): Observable<Product>{
+  update(product: Product):Observable<Product>{
     const url = `${this.baseUrl}/${product.id}`
     return this.http.put<Product>(url, product)
+  }
+
+  delete(id: string):Observable<Product>{
+    const url = `${this.baseUrl}/${id}`
+    return this.http.delete<Product>(url)
   }
 }
