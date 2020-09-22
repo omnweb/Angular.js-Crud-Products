@@ -16,15 +16,15 @@ product: Product = {
   price: null
 }
 // Importando o serviço
-  constructor(private prductService: ProductService, private router: Router) { }
+  constructor(private productService: ProductService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
   createProduct(): void {
     // Metodo subscribe notifica quando a mensagem chegar
-    this.prductService.create(this.product).subscribe(() => {
-      this.prductService.showMessage('Produto criado com sucesso!') // Emitindo a mensagem
+    this.productService.create(this.product).subscribe(() => {
+      this.productService.showMessage('Produto criado com sucesso!') // Emitindo a mensagem
       this.router.navigate(['/products']) // Retornando para a página de produtos
     })
   }
