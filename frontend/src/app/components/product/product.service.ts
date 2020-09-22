@@ -30,9 +30,21 @@ export class ProductService {
     //Como está sendo inserido um produto com nome e preço, e experado receber o produto com  nome, preço e id
   }
 
-  //Metodo responsável por ler os produtos cadastrados no backend
+  //Método responsável por ler os produtos cadastrados no backend
 
   read():Observable<Product[]> { // Observabble retorna uma lista de produtos
     return this.http.get<Product[]>(this.baseUrl)
+  }
+
+  // Método responsável por trazer o produto preenchido para ser alterado
+  readById(id: string):Observable<Product>{
+    const url = `${this.baseUrl}/${id}` //Passando o id na url
+    return this.http.get<Product>(url)
+  }
+
+  // Método responsável por fazer a alteração do produto
+  update(product: Product): Observable<Product>{
+    const url = `${this.baseUrl}/${product.id}`
+    return this.http.put<Product>(url, product)
   }
 }

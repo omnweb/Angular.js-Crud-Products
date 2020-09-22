@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class ProductReadComponent implements OnInit {
   // Criando o atributo produto do tipo lista de produtos
   products: Product[]
-  displayedColumns = ['id', 'name', 'price']
+  displayedColumns = ['id', 'name', 'price', 'action']
 
   // Declarando no construror
   constructor(private productService: ProductService) { }
